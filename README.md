@@ -54,6 +54,16 @@ pre-commit run --all-files
 - Resultados JSON de Bandit y pip-audit antes y despues.
 - SBOM CycloneDX del estado vulnerable y del estado corregido.
 - Backlog, Definition of Done y tabla de decisiones para el informe.
-- Workflow de Build Breaker listo para GitHub Actions.
+- Rechazo local de una credencial ficticia documentado en `docs/EVIDENCIA_PRECOMMIT.md`.
+- Build Breaker separado en pruebas, SAST, SCA y deteccion de secretos.
+- Ejecucion vulnerable rechazada por los cuatro controles.
+- Ejecucion corregida aprobada por los cuatro controles.
+- Pull Request revisado por `ElkinC1` y `JoC1305`, aprobado e integrado.
 
-Las capturas del tablero y del Pull Request deben ser reales y se obtienen siguiendo `docs/GUIA_GITHUB.md`.
+## Enlaces finales
+
+- GitHub Project: https://github.com/users/C0qUX/projects/2
+- Pull Request aprobado: https://github.com/C0qUX/mini-sprint-devsecops-api/pull/6
+- Pipeline rojo: https://github.com/C0qUX/mini-sprint-devsecops-api/actions/runs/44530861666
+- Pipeline verde del PR: https://github.com/C0qUX/mini-sprint-devsecops-api/actions/runs/44531345770
+- Pipeline verde en `main`: https://github.com/C0qUX/mini-sprint-devsecops-api/actions/runs/44535201494

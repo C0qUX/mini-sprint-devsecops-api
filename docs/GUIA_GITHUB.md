@@ -1,21 +1,14 @@
-# Guia para obtener las evidencias reales de GitHub
+# Registro de evidencias reales de GitHub
 
-## Preparar el repositorio
+## Repositorio y tablero
 
-1. Crea un repositorio vacio en la cuenta del equipo.
-2. Configura el remoto con `git remote add origin URL_DEL_REPOSITORIO`.
-3. Publica la rama principal con `git push -u origin main`.
-4. Crea en GitHub Projects un tablero con las columnas Backlog, En progreso, En revision y Terminado.
-5. Copia las historias de `docs/BACKLOG_Y_DOD.md` y asigna responsables reales.
+El repositorio se publico en https://github.com/C0qUX/mini-sprint-devsecops-api y se creo el proyecto `Mini-Sprint DevSecOps` en https://github.com/users/C0qUX/projects/2. Las historias SEC-01 a SEC-04 se registraron como Issues reales, se asignaron y se cerraron al completar sus criterios.
 
-## Demostracion roja y verde
+## Demostracion roja y verde completada
 
-El historial local conserva una etiqueta `vulnerable` y el estado corregido en `main`.
+1. El Pull Request #6 reprodujo el estado vulnerable y los cuatro trabajos fallaron: pruebas, Bandit, pip-audit y detect-secrets.
+2. Un segundo commit restauro las correcciones y los mismos cuatro trabajos terminaron en verde.
+3. `ElkinC1` y `JoC1305` aprobaron la revision.
+4. El Pull Request se integro en `main` y la ejecucion posterior tambien termino en verde.
 
-1. Crea una rama remota con el estado vulnerable: `git push origin vulnerable:mini-sprint`.
-2. Abre un Pull Request de `mini-sprint` hacia `main` y captura el Build Breaker en rojo.
-3. Lleva la correccion a esa rama: `git push origin mini-sprint:mini-sprint`.
-4. Espera el nuevo workflow, comprueba que todas las verificaciones esten verdes y solicita la aprobacion de otro integrante.
-5. Captura el Pull Request aprobado y el tablero actualizado; despues, integra el Pull Request en `main`.
-
-No subas el archivo `.env`, bases de datos locales ni credenciales reales.
+No se subieron archivos `.env`, bases de datos locales ni credenciales reales.
