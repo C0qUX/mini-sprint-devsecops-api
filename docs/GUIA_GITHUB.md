@@ -14,8 +14,8 @@ El historial local conserva una etiqueta `vulnerable` y el estado corregido en `
 
 1. Crea una rama remota con el estado vulnerable: `git push origin vulnerable:mini-sprint`.
 2. Abre un Pull Request de `mini-sprint` hacia `main` y captura el Build Breaker en rojo.
-3. Lleva la correccion a esa rama: `git push --force-with-lease origin main:mini-sprint`.
+3. Lleva la correccion a esa rama: `git push origin mini-sprint:mini-sprint`.
 4. Espera el nuevo workflow, comprueba que todas las verificaciones esten verdes y solicita la aprobacion de otro integrante.
-5. Captura el Pull Request aprobado y el tablero actualizado.
+5. Captura el Pull Request aprobado y el tablero actualizado; despues, integra el Pull Request en `main`.
 
 No subas el archivo `.env`, bases de datos locales ni credenciales reales.
