@@ -6,4 +6,4 @@ repos:
         entry: detect-secrets-hook
         language: system
         args: ["--baseline", ".secrets.baseline"]
-        exclude: ^(evidencias/|legacy/|\.env\.example$)
+        exclude: ^((evidencias|legacy)[/\\]|\.env\.example$)
