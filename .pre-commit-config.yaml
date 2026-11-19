@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: detect-secrets
+        name: Detectar secretos
+        entry: detect-secrets-hook
+        language: system
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: ^(evidencias/|legacy/|\.env\.example$)
