@@ -1,6 +1,6 @@
 # Tabla de decisiones de mitigacion
 
-La auditoria inicial del 19 de noviembre de 2026 reporto 54 avisos en 5 paquetes, equivalentes a 28 CVE unicos. pip-audit no asigna severidad CVSS en su salida, por lo que la prioridad del sprint se definio segun explotabilidad y efecto sobre autenticacion, confidencialidad y disponibilidad.
+En la auditoría inicial del 19 de noviembre de 2026 encontramos 54 avisos en 5 paquetes, equivalentes a 28 CVE únicos. Como pip-audit no asignó una severidad CVSS uniforme en su salida, definimos la prioridad según la facilidad de explotación y el posible efecto sobre la autenticación, la confidencialidad y la disponibilidad.
 
 | Hallazgo | Evidencia inicial | Prioridad | Decision | Verificacion final | Estado |
 |---|---|---|---|---|---|

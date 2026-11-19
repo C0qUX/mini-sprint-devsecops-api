@@ -2,14 +2,14 @@
 
 ## 0:00 a 0:40 Contexto
 
-Presentar el objetivo del mini-sprint: heredar una API Flask con deuda de seguridad y aplicar controles DevSecOps sin detener el flujo de desarrollo. Mostrar brevemente los tres endpoints y el tablero.
+"En esta práctica recibimos una API Flask que funcionaba, pero tenía deuda de seguridad. Nuestro objetivo fue corregirla e integrar controles de seguridad sin detener el flujo de desarrollo." Después mostramos brevemente los tres endpoints y el tablero.
 
 ## 0:40 a 1:50 Hallazgos
 
-- La autenticacion concatenaba entradas del usuario en SQL, confirmada por Bandit B608 y CWE-89.
-- La API key y las contrasenas de demostracion estaban dentro del codigo y la base guardaba texto plano.
-- pip-audit encontro 54 avisos en 5 paquetes, equivalentes a 28 CVE unicos.
-- No habia pruebas, deteccion de secretos ni Build Breaker.
+- La autenticación concatenaba entradas del usuario en SQL, algo que Bandit confirmó con B608 y CWE-89.
+- La API key y las contraseñas de demostración estaban dentro del código y la base guardaba texto plano.
+- pip-audit encontró 54 avisos en 5 paquetes, equivalentes a 28 CVE únicos.
+- No había pruebas, detección de secretos ni Build Breaker.
 
 ## 1:50 a 3:20 Mejoras
 
@@ -24,4 +24,4 @@ Mostrar las historias SEC-01 a SEC-04, responsables y estados. Resaltar que una 
 
 ## 4:20 a 5:00 Leccion aprendida
 
-El reto principal fue convertir la seguridad en controles repetibles y tempranos. En el modelo anterior, los defectos podian descubrirse al final; con DevSecOps, el hook local evita secretos antes del commit y el pipeline impide integrar codigo inseguro. La seguridad pasa a ser un criterio compartido del equipo y no una revision aislada.
+"La principal dificultad fue acostumbrarnos a revisar la seguridad desde el inicio. Aprendimos que un pipeline rojo no significa que el equipo fracasó, sino que el control encontró el problema antes de que llegara a la rama principal. Con DevSecOps, la seguridad se volvió una responsabilidad compartida del equipo."

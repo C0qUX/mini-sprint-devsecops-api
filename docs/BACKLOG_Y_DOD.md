@@ -4,10 +4,10 @@
 
 | ID | Historia | Riesgo | Prioridad | Criterios de aceptacion | Responsable |
 |---|---|---|---|---|---|
-| SEC-01 | Como equipo, queremos parametrizar la consulta de autenticacion para impedir inyeccion SQL. | Acceso no autorizado a cuentas y datos. | Critica | La consulta usa parametros; una carga de inyeccion recibe 401; las pruebas pasan. | Integrante 1 |
-| SEC-02 | Como equipo, queremos retirar secretos y contrasenas del codigo para evitar su exposicion en Git. | Uso indebido de credenciales. | Alta | Los secretos se leen desde variables de entorno; `.env` esta ignorado; detect-secrets bloquea una credencial falsa. | Integrante 2 |
-| SEC-03 | Como equipo, queremos actualizar las dependencias vulnerables para reducir el riesgo de CVEs conocidos. | DoS, fuga de datos y fallos en clientes HTTP. | Critica | `pip-audit -r requirements.txt` termina sin vulnerabilidades conocidas. | Integrante 3 |
-| SEC-04 | Como equipo, queremos automatizar SAST, SCA, pruebas y deteccion de secretos para bloquear integraciones inseguras. | Regresiones de seguridad en la rama principal. | Alta | El workflow falla con la version vulnerable y pasa con la version corregida. | Integrante 4 |
+| SEC-01 | Como equipo, queremos parametrizar la consulta de autenticación para impedir inyección SQL. | Acceso no autorizado a cuentas y datos. | Crítica | La consulta usa parámetros; una carga de inyección recibe 401; las pruebas pasan. | Cantos Yépez Elkin Omar |
+| SEC-02 | Como equipo, queremos retirar secretos y contraseñas del código para evitar su exposición en Git. | Uso indebido de credenciales. | Alta | Los secretos se leen desde variables de entorno; `.env` está ignorado; detect-secrets bloquea una credencial falsa. | Fernández Zambrano José Carlos |
+| SEC-03 | Como equipo, queremos actualizar las dependencias vulnerables para reducir el riesgo de CVE conocidos. | DoS, fuga de datos y fallos en clientes HTTP. | Crítica | `pip-audit -r requirements.txt` termina sin vulnerabilidades conocidas. | Lucas García Jork Davis |
+| SEC-04 | Como equipo, queremos automatizar SAST, SCA, pruebas y detección de secretos para bloquear integraciones inseguras. | Regresiones de seguridad en la rama principal. | Alta | El workflow falla con la versión vulnerable y pasa con la versión corregida. | Todo el equipo |
 
 ## Definition of Done
 

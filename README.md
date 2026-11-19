@@ -2,6 +2,14 @@
 
 Este repositorio contiene la remediacion verificable de la API vulnerable entregada en la practica. La version original se conserva en `legacy/` y en la etiqueta Git `vulnerable`; la rama `main` contiene la version corregida.
 
+## Equipo
+
+- Cantos Yépez Elkin Omar
+- Fernández Zambrano José Carlos
+- Lucas García Jork Davis
+
+Docente: Ing. Sandra Jackeline Soledispa Pereira.
+
 ## Arquitectura y endpoints
 
 - Flask expone `GET /api/health`, `GET /api/profile` y `POST /api/login`.
